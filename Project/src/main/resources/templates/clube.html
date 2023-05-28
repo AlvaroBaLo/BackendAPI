@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon " type="image/x-icon " href="wolf.png">
+	<link rel="stylesheet" type="text/css" href="style_de_God-Wolf.css">
+	<link rel="stylesheet" type="text/css" href="style_clube.css">
+	<script language="JavaScript">
+		
+            function reportSelection()
+            {
+                document.form1.textfield.value = "Elegiste la opcion " + 
+                    (document.form1.Select1.selectedIndex + 1)
+            }
+         
+	</script>
+	
+</head >
+
+<body >
+	<div id="header">
+			<ul class="nav">
+				<li><a href="God-Wolf.html">Inicio</a></li>
+				<li><a href="">Servicios</a></li>
+				<li><a href="">Sobre Nosotros</a></li>
+				<li><a href="">Contactanos</a></li>
+			</ul>
+		</div>
+		<a class="b-clube"href="clube.html"> 
+    	<IMG SRC="registered.png"  
+            WIDTH="50px"  ALIGN="top">
+    </a>    
+    <a type="b-comprar">
+    	<img src="carrito-de-compras.png"
+    		width="40px" align="top">
+    </a>
+    <a class="b-login" href="login.html">
+    	<img src="iniciar-sesion.png"
+    	width="70px" align="top">
+
+
+	<br>
+	<br><center>
+		        <MARQUEE Width="500" ALIGN="TOP" LOOP="INFINITE" BEHAVIOR="BOUNCE" 
+            BGCOLOR="#000" DIRECTION="RIGHT">
+            <H2>
+                Bienvenido al Club de God-Wolf  </H2>
+        </MARQUEE>
+<br>
+<h4>Porfavor ingrese sus datos personales para ingresar al <strong>Club</strong></h4>
+<br><br>
+</center>
+<form name="form1">
+	<center>
+	<div id="controles">
+	<label>Ingrese su nombre : </label>
+	<input type="text"placeholder="Escriba su nombre">
+
+	<br><br>
+
+	<label>Ingrese su correo electronico : </label>
+	<input type="email" placeholder="Correo electronico" name="mail">
+
+	<br><br>
+
+	 <label>Ingrese cualquier contraseña : </label>
+	<input type="password" name="correo " required placeholder="ingrese la contraseña" size="20">
+
+	<br><br>
+	<label>Ingrese en que Provincia vive: </label>
+	<input name="textfield"type="Text" size="20">
+	<select name="Select1" on onchange="
+		reportSelection()">
+		<option> Madrid</option>
+		<option> Cuenca</option>
+		<option> Barcelona</option>
+		<option> Málaga</option>
+		<option> Cádiz</option>
+	</select>
+	<br><br>
+	<label>Codigo Postal</label>
+	<input type="text" id="cp" name="cp" pattern="[0-9]{5}">
+	<br><br>
+	<label for="f_nac">Fecha de nacimiento</label>
+			<input type="date" id="f_nac" name="f_nac" >
+			<br><br>
+
+			<label for="est1">Soltero/a</label>
+			<input type="radio" id="est1" name="estado_civil" value="S">
+			<label for="est2">Casado/a</label>
+			<input type="radio" id="est2" name="estado_civil" value="C">
+			<label for="est3">Pareja/a</label>
+			<input type="radio" id="est3" name="estado_civil" value="P">
+			<br><br>
+	<input type="submit" name="Enviar" id="Enviar" value="Enviar">
+
+	
+</div>
+</center>
+</form>
+</body>
+</html>

@@ -1,0 +1,49 @@
+h1 {
+	text-align:center; 
+		color: wheat;
+		text-shadow:5px 5px 5px black;
+		font-family: fantasy;
+}
+
+form {
+	color: white;
+	width: 300px; 
+	padding:30px; 
+	margin: 25px auto;
+	border: 3px ;
+	border-radius: 2px green;
+	box-shadow: 5px 5px 15px;
+	opacity: 1;
+}
+
+label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+input {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	border: none;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+button {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	background-color: #4CAF50;
+	color: white;
+	font-weight: bold;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #3E8E41;
+}

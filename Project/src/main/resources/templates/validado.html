@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registro exitoso</title>
+	<link rel="stylesheet" type="text/css" href="style_validado.css">
+	<link rel="stylesheet" type="text/css" href="style_de_God-Wolf.css">
+</head>
+<body><div id="header">
+            <ul class="nav">
+                <li><a href="God-Wolf.html">Inicio</a></li>
+                <li><a href="">Servicios</a></li>
+                <li><a href="">Sobre Nosotros</a></li>
+                <li><a href="">Contactanos</a></li>
+            </ul>
+        </div>
+        <a class="b-clube"href="Formulario.html"> 
+        <IMG SRC="registered.png"  
+            WIDTH="50px"  ALIGN="top">
+    </a>    
+    <a type="b-comprar">
+        <img src="carrito-de-compras.png"
+            width="40px" align="top">
+
+    <a class="b-login" href="login.html">
+        <img src="iniciar-sesion.png"
+        width="70px" align="top">
+    </a>
+    </a>
+    <br>
+    <br>
+    <center><form>
+	
+<script type="text/javascript">
+    var contador = 6; // Segundos
+    var redirecciona = "God-Wolf.html";
+     
+    function temporizador(){
+        var mensaje = document.getElementById("mensaje");
+          if(contador > 0){
+            contador--;
+            mensaje.innerHTML = ("Redireccionando en "+contador+" segundos.").fontcolor("whitesmoke");
+            setTimeout("temporizador()", 1000);
+        }else{
+            window.location.href = redirecciona;
+        }
+    }
+</script>
+
+<label><h3>Esta pagina va a ser redireccionada.</h3></label>
+<br>
+<label><span id="mensaje">
+    <script type="text/javascript">temporizador();</script>
+</span></label>
+
+	<label><h2>Su registro se ha completado correctamente</h2></label>
+	<div id="delayMsg"></div>
+
+	</form>
+
+</body>
+</html>

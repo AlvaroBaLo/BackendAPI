@@ -1,0 +1,37 @@
+{"properties": [
+  {
+    "name": "spring.jpa.hibernate.dialect",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.jpa.hibernate.dialect'"
+  },
+  {
+    "name": "spring.jpa.hibernate.naming_strategy",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.jpa.hibernate.naming_strategy'"
+  },
+  {
+    "name": "spring.mvc.cors.allowed-origins",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.mvc.cors.allowed-origins'"
+  },
+  {
+    "name": "spring.mvc.cors.allowed-methods",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.mvc.cors.allowed-methods'"
+  },
+  {
+    "name": "spring.mvc.cors.allowed-headers",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.mvc.cors.allowed-headers'"
+  },
+  {
+    "name": "spring.security.web.config.allowed-cors-origins",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.security.web.config.allowed-cors-origins'"
+  },
+  {
+    "name": "spring.security.web.config.mapping",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.security.web.config.mapping'"
+  }
+]}
