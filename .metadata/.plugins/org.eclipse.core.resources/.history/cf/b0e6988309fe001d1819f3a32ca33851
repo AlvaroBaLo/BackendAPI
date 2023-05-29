@@ -1,0 +1,5 @@
+package com.gestion.empleados.repositorio;
+
+public class ForumRepository {
+
+}
