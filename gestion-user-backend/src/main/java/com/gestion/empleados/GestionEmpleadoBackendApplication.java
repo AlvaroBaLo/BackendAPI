@@ -1,25 +1,27 @@
 package com.gestion.empleados;
 
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-import org.springframework.web.servlet.config.annotation.CorsRegistry;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+import org.springframework.context.annotation.ComponentScan;
 
+import com.gestion.empleados.modelo.Post;
+import com.gestion.empleados.repositorio.PostRespository;
+@ComponentScan
 @SpringBootApplication
 public class GestionEmpleadoBackendApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(GestionEmpleadoBackendApplication.class, args);
-	}
-	@Bean
-	public WebMvcConfigurer corsConfigurer() {
-		return new WebMvcConfigurer() {
-			@Override
-			public void addCorsMappings(CorsRegistry registry) {
-				registry.addMapping("/greeting-javaconfig").allowedOrigins("http://localhost:8080");
-			}
-		};
+		SpringApplication.run(GestionEmpleadoBackendApplication.class, args);	
 	}
 	
+
+//	@Bean
+//	CommandLineRunner commandLineRuner(PostRespository posts) {
+//		return args->{
+//			posts.save(new Post("Hola Mundo","Hola Mundo","Admin","Admin"));
+//		};
+//	}
+//	
 }

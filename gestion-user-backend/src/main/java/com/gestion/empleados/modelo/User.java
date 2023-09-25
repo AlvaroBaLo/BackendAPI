@@ -1,5 +1,6 @@
 package com.gestion.empleados.modelo;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
 import jakarta.persistence.Column;
@@ -10,22 +11,27 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = " users")
-public class User {
+@Table(name = "users_security")
+public class User implements Serializable{
+	
+
+	
+	private static final long serialVersionUID = 2L;
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
-	@Column(name = "nombre", length = 60, nullable = false)
+	@Column(name = "nombre", length = 60)
 	private String nombre;
 
-	@Column(name = "apellido", length = 60, nullable = false)
+	@Column(name = "apellido", length = 60)
 	private String apellido;
 
-	@Column(name = "alias", length = 60, nullable = false)
+	@Column(name = "alias", length = 60)
 	private String alias;
 
-	@Column(name = "mail", length = 60, nullable = false, unique = true)
+	@Column(name = "mail", length = 60, unique = true)
 	private String mail;
 
 	@Column(name = "password")
@@ -33,7 +39,7 @@ public class User {
 
 	@Column(name = "fecha_nac")
 	private LocalDate fecha_nac;
-
+	
 	public Long getId() {
 		return id;
 	}
@@ -90,8 +96,24 @@ public class User {
 		this.fecha_nac = fecha_nac;
 	}
 
+	public Integer getRolIdRol() {
+		return rolIdRol;
+	}
+
+	public void setRolIdRol(Integer rolIdRol) {
+		this.rolIdRol = rolIdRol;
+	}
+
+
+	@Column(name = "RolIdRol")
+	private Integer rolIdRol;
+
+	
+	
+	public User() {}
+
 	public User(Long id, String nombre, String apellido, String alias, String mail, String password,
-			LocalDate fecha_nac) {
+			LocalDate fecha_nac, Integer rolIdRol) {
 		super();
 		this.id = id;
 		this.nombre = nombre;
@@ -100,10 +122,18 @@ public class User {
 		this.mail = mail;
 		this.password = password;
 		this.fecha_nac = fecha_nac;
+		this.rolIdRol = rolIdRol;
 	}
 
-	public User() {
-		super();
+	@Override
+	public String toString() {
+		return "User [id=" + id + ", nombre=" + nombre + ", apellido=" + apellido + ", alias=" + alias + ", mail="
+				+ mail + ", password=" + password + ", fecha_nac=" + fecha_nac + ", rolIdRol=" + rolIdRol + "]";
 	}
+
+	
+	
+
+	
 
 }

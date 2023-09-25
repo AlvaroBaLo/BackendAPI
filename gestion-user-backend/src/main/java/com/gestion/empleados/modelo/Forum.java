@@ -1,6 +1,5 @@
 package com.gestion.empleados.modelo;
 
-import java.time.LocalDate;
 import java.util.Date;
 
 import jakarta.persistence.Column;
@@ -62,15 +61,15 @@ public class Forum {
 		this.alias = alias;
 	}
 
-	public String getDate() {
+	public Date getDate() {
 		return date;
 	}
 
-	public void setDate(String date) {
+	public void setDate(Date date) {
 		this.date = date;
 	}
 
-	public Forum(Long id, String tema, String titulo, String alias, String date) {
+	public Forum(Long id, String tema, String titulo, String alias, Date date) {
 		super();
 		this.id = id;
 		this.tema = tema;

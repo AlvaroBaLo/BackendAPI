@@ -7,6 +7,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
@@ -33,6 +34,9 @@ public class User {
 
 	@Column(name = "fecha_nac")
 	private LocalDate fecha_nac;
+	
+	@ManyToOne
+    public Rol rol;
 
 	public Long getId() {
 		return id;
@@ -100,10 +104,18 @@ public class User {
 		this.mail = mail;
 		this.password = password;
 		this.fecha_nac = fecha_nac;
+		
 	}
 
 	public User() {
 		super();
 	}
+
+	public Object getUserName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
 
 }
